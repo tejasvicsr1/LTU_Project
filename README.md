@@ -1,4 +1,4 @@
-# LTU_Project
+# Language Typology and Universals Project
 A computational approach to understanding how conditional clauses work in Telugu and English.  
 ***
 
@@ -39,18 +39,12 @@ Conditional sentences are sentences that express one thing contingent on somethi
 - [Paper on Hindi Conditional Clauses](https://hal.archives-ouvertes.fr/hal-01377532/file/Sharma-conditionals-hal.pdf)
 - [Paper on English Conditional Clause Forms](https://www.sciencedirect.com/science/article/pii/0024384188900629)
 
+
 ## Tasks
-
-[x] Find Dataset of 500 English sentences with conditional clauses.
-
-[x] Translate the sentences into Hindi and Telugu.
-
-[x] POS Tagging for Hindi, English, and Telugu sentences.
-
-[x] Chunk the Telugu sentences.
-
-[] Identity the type of conditional clause according to the rules as seen 
-in **Types of Conditionals**.
-
-[] Find patterns and draw graphs to visualise the observations.
+- [x] Find Dataset of 500 English sentences with conditional clauses.
+- [x] Translate the sentences into Hindi and Telugu.
+- [x] POS Tagging for Hindi, English, and Telugu sentences.
+- [x] Chunk the Telugu sentences.
+- [ ] Identity the type of conditional clause according to the rules as seen in **Types of Conditionals**.
+- [ ] Find patterns and draw graphs to visualise the observations.
 
