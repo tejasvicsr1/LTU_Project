@@ -188,9 +188,6 @@ TAGS:
 ```
 ***
 
-## Chunking
-***
-
 ## Contributors
 
 > [Tejasvi Chebrolu](https://github.com/tejasvicsr1)

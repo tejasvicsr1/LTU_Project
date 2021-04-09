@@ -3,7 +3,7 @@ import re
 import spacy
 import stanza
 
-stanza.download("te")
+# stanza.download("te")
 nlp_te = stanza.Pipeline('te')
 
 
@@ -42,7 +42,8 @@ def print_func(teltags, teldata, g):
                 g.write('\n')
 
 # Loading the corpus
-f = open("/content/drive/My Drive/conditional_sentences_telugu.txt", 'r')
+f = open("../conditional_sentences_telugu.txt", 'r')
+# f = open("/content/drive/My Drive/conditional_sentences_telugu.txt", 'r')
 for sentences in f:
     sentences = sentences.rstrip()
     teldata.append(sentences)
@@ -64,5 +65,6 @@ for sentence in teldata:
     teltags.append(bigtemp)
 
 # Printing the sentences along with the POS tags.
-g = open("/content/drive/My Drive/tel_pos_tags.txt", 'w')
+g = open("data/tel_pos_tags.txt", 'w')
+# g = open("/content/drive/My Drive/tel_pos_tags.txt", 'w')
 print_func(teltags, teldata, g)
