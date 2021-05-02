@@ -283,8 +283,7 @@ The split can be seen below.
 
 ## Conclusions
 The conditionals in Indian languages were harder to analyse than the conditionals in English. This was because of the syntax of the language. Hindi, Telugu, being a free order language had different variations of the same sentence, and it was hard to choose one particular translation. Similarly, the innate bias to convert sentences into their present form while translating ensure that the analyses that we did could be more varied. The fact that our corpus consisted of a lot of Old English led to very interesting constructions which had to be carefully examined before we could place them into a particular category.
-
-Conditional clauses in Telugu end in a non-finite form of the verb in which the suffix `tE, TE`is added to the stem.
+Conditional clauses in Telugu end in a non-finite form of the verb in which the suffix `tE, TE` is added to the stem.
 
 We propose, after the work done in this project that condtionals in Indian languages be dealt with in an easier manner than how they are dealt with in English. There is no need for complicating it and splitting into four types. It would be easier to just deal with a **past** and a **present** conditional.
 ***
