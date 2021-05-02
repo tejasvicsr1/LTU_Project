@@ -47,9 +47,9 @@ Conditional sentences are sentences that express one thing contingent on somethi
 - [x] Translate the sentences into Hindi and Telugu.
 - [x] POS Tagging for Hindi, English, and Telugu sentences.
 - [x] Chunk the Telugu sentences. 
-- [ ] Identity the type of conditional clause according to the rules as seen in **Types of Conditionals**. **TODO**
-- [ ] Find patterns and draw graphs to visualise the observations. **TODO**
-- [ ] Write the final report. **TODO**
+- [x] Identity the type of conditional clause according to the rules as seen in **Types of Conditionals**.
+- [x] Find patterns and draw graphs to visualise the observations.
+- [x] Write the final report.
 ***
 
 ## Directory Structure
@@ -60,13 +60,28 @@ The directory structure for the repository is as follows:
 ├── annotation
 │   ├── data
 │   │   ├── eng_pos_tags.txt
-│   │   └── hin_pos_tags.txt
+│   │   ├── Hindi
+│   │   │   ├── past.txt
+│   │   │   └── present.txt
+│   │   ├── hin_pos_tags.txt
+│   │   ├── tel_pos_tags.txt
+│   │   ├── Type_0
+│   │   │   └── eng.txt
+│   │   ├── Type_1
+│   │   │   └── eng.txt
+│   │   ├── Type_2
+│   │   │   └── eng.txt
+│   │   └── Type_3
+│   │       └── eng.txt
 │   ├── eng.ipynb
 │   ├── eng.py
 │   ├── headers.py
 │   ├── helper_hindi.py
 │   ├── hindi.ipynb
-│   └── hindi.py
+│   ├── hindi.py
+│   ├── Telugu_pos.ipynb
+│   └── Telugu_POS.py
+├── conditional_sentences_telugu.txt
 ├── data
 │   ├── austen-emma.txt
 │   ├── austen-persuasion.txt
@@ -88,10 +103,18 @@ The directory structure for the repository is as follows:
 │   └── whitman-leaves.txt
 ├── dataset_create.py
 ├── eng_conditional_sentences.txt
+├── extra
+│   ├── draw_graphs.py
+│   └── images
+│       ├── Conditionals_Split_in_English.png
+│       ├── ConditionalsSplit_in_Hindi.png
+│       └── Conditionals_Split_in_Telugu.png
 ├── final_hindi_sens.txt
 ├── hin_conditional_sentences.txt
 ├── LICENSE
+├── ProjectPlan.pdf
 ├── README.md
+├── Report.pdf
 └── translate_sentences.py
 ```
 ***
@@ -188,8 +211,76 @@ TAGS:
 ```
 ***
 
-## Contributors
+## Analysis Of The Conditionals
+All the sentences were manually analysed. English sentences were classified into the four categories discussed above. Telugu and Hindi sentences were classified into **past conditionals** and **present conditionals**. This is because of the special sytactic features in the language that will be elaborated on later.
 
+### English
+The classified sentences can be found in the respective type in the `data` folder. For example, the _Type 1_ conditionals can be found in `data/Type_1/eng.txt`.
+The split can be seen below.
+
+| Type 0 | Type 1 | Type 2 | Type 3 |
+|--------|--------|--------|--------|
+| 156    | 63     | 203    | 78     |
+
+### Hindi
+The classified sentences can be found in the respective type in the `data/Hindi` folder. For example, the _Past Conditionals_ can be found in `data/Hindi/past.txt`.
+The split can be seen below.
+
+| Past Conditionals | Present Conditionals |
+|--------|--------|
+| 211    | 289     |
+
+### Telugu
+The classified sentences can be found in the respective type in the `data/Telugu` folder. For example, the _Past Conditionals_ can be found in `data/Telugu/past.txt`.
+The split can be seen below.
+
+| Past Conditionals | Present Conditionals |
+|--------|--------|
+| 211    | 289     |
+***
+
+## Observations
+
+### General Splits
+
+**English**
+
+![Conditional Splits in English](extra/images/Conditionals_Split_in_English.png)
+
+**Hindi**
+
+![Conditional Splits in Hindi](extra/images/Conditionals_Split_in_Hindi.png)
+
+**Telugu**
+
+![Conditional Splits in Telugu](extra/images/Conditionals_Split_in_Telugu.png)
+
+### English
+- There were more past conditionals than present conditionals.
+	- This was because most of the sentences were taken from classic English literature. These texts tend to be written in the past tense.
+- There were more simple past and simple present conditionals than present with infinitve and past perfect conditionals.
+	- This was because of the fact that the corpus chosen was from classic English literature and it is less likely to be in perfect tenses.
+- There were many sentences that were in _Shakesperean English_ and they were converted into sentences in the past tense in English.
+
+### Hindi
+- Sentences were classified into past and present conditionals instead of the four types discussed above.
+	- This was because there was a loss in translation of the perfect tense aspect when converting into a past or present tense.
+	- Similarly, it was hard to find exact Hindi translations of the _Shakesperean English_ and therefore, we had to choose this approach.
+- Here, there were more present conditionals rather than past conditionals.
+	- This is because of the fact that there was an inherited bias to convert sentences into their present form during the manual translation of these sentences.
+- Unlike English, the _first_ word had two options - _अगर_ or _यदि_.
+
+### Telugu
+
+***
+
+## Conclusions
+The conditionals in Indian languages were harder to analyse than the conditionals in English. This was because of the syntax of the language. Hindi, being a free order language had different variations of the same sentence, and it was hard to choose one particular translation. Similarly, the innate bias to convert sentences into their present form while translating ensure that the analyses that we did could be more varied. The fact that our corpus consisted of a lot of Old English led to very interesting constructions which had to be carefully examined before we could place them into a particular category.
+
+We propose, after the work done in this project that condtionals in Indian languages be dealt with in an easier manner than how they are dealt with in English. There is no need for complicating it and splitting into four types. It would be easier to just deal with a **past** and a **present** conditional.
+***
+
+## Contributors
 > [Tejasvi Chebrolu](https://github.com/tejasvicsr1)
 
 > [Padakanti Srijith](https://github.com/srijith9862)
