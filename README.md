@@ -40,6 +40,8 @@ Conditional sentences are sentences that express one thing contingent on somethi
 - [Structure of Hindi Conditional Clauses](https://hindilanguage.info/hindi-grammar/conditional-sentences/)
 - [Paper on Hindi Conditional Clauses](https://hal.archives-ouvertes.fr/hal-01377532/file/Sharma-conditionals-hal.pdf)
 - [Paper on English Conditional Clause Forms](https://www.sciencedirect.com/science/article/pii/0024384188900629)
+- [Paper on English syntax of conditional clauses](https://kb.osu.edu/bitstream/handle/1811/81774/WPL_31_July_1985_130.pdf)
+- [Blog on Hindi condtional with examples](https://www.eenglishgrammar.com/2016/11/conditional-sentences-with-examples.html)
 ***
 
 ## Tasks
@@ -271,11 +273,18 @@ The split can be seen below.
 - Unlike English, the _first_ word had two options - _अगर_ or _यदि_.
 
 ### Telugu
-
-***
+- Sentences were classified into past and present conditionals instead of the four types discussed above.
+	- This was because there was a loss in translation of the perfect tense aspect when converting into a past or present tense.
+	- Similarly, it was hard to find exact Hindi translations of the _Shakesperean English_ and therefore, we had to choose this approach.
+- Here, there were more present conditionals rather than past conditionals.
+	- This is because of the fact that there was an inherited bias to convert sentences into their present form during the manual translation of these sentences.
+- Unlike English, in Telugu the last part of the conditional needs to be checked if the conditional ends with 'ఉంటే'/ 'స్తే' they would end up in past and 'న్నావ్' / 'నంటే'.
+- Conditional clauses in Telugu end in a non-finite form of the verb in which the suffix `tE, TE`is added to the stem.
 
 ## Conclusions
-The conditionals in Indian languages were harder to analyse than the conditionals in English. This was because of the syntax of the language. Hindi, being a free order language had different variations of the same sentence, and it was hard to choose one particular translation. Similarly, the innate bias to convert sentences into their present form while translating ensure that the analyses that we did could be more varied. The fact that our corpus consisted of a lot of Old English led to very interesting constructions which had to be carefully examined before we could place them into a particular category.
+The conditionals in Indian languages were harder to analyse than the conditionals in English. This was because of the syntax of the language. Hindi, Telugu, being a free order language had different variations of the same sentence, and it was hard to choose one particular translation. Similarly, the innate bias to convert sentences into their present form while translating ensure that the analyses that we did could be more varied. The fact that our corpus consisted of a lot of Old English led to very interesting constructions which had to be carefully examined before we could place them into a particular category.
+
+Conditional clauses in Telugu end in a non-finite form of the verb in which the suffix `tE, TE`is added to the stem.
 
 We propose, after the work done in this project that condtionals in Indian languages be dealt with in an easier manner than how they are dealt with in English. There is no need for complicating it and splitting into four types. It would be easier to just deal with a **past** and a **present** conditional.
 ***
